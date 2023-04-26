@@ -9,6 +9,10 @@ export default function SliderContainer() {
   const jsClasses = styles.slider__img + ' ' + styles.slider__img_js;
   const reactClasses = styles.slider__img + ' ' + styles.slider__img_react;
   const gitClasses = styles.slider__img + ' ' + styles.slider__img_git;
+  const npmClasses = styles.slider__img + ' ' + styles.slider__img_npm;
+  const bootstrapClasses = styles.slider__img + ' ' + styles.slider__img_bootstrap;
+  const muiClasses = styles.slider__img + ' ' + styles.slider__img_mui;
+  const antdClasses = styles.slider__img + ' ' + styles.slider__img_antd;
 
   const settings = {
     dots: false,
@@ -28,6 +32,10 @@ export default function SliderContainer() {
         <div className={jsClasses}></div>
         <div className={reactClasses}></div>
         <div className={gitClasses}></div>
+        <div className={npmClasses}></div>
+        <div className={bootstrapClasses}></div>
+        <div className={muiClasses}></div>
+        <div className={antdClasses}></div>
       </Slider>
     </div>
   )
