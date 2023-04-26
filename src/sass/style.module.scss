@@ -1,0 +1,12 @@
+@import './main.module';
+@import './fonts_module';
+
+@import '../routes/Home/Components/Header/Header.module';
+@import '../routes/Home/Components/Slider/Slider.module';
+@import '../routes/Home/Components/About/About.module';
+@import '../routes/Home/Components/Skills/Skills.module';
+@import '../routes/Home/Components/Language/Language.module';
+@import '../routes/Home/Components/Studies/Studies.module';
+@import '../routes/Home/Components/Github/Github.module';
+@import '../routes/Home/Components/Projects/Projects.module';
+@import '../routes/Home/Components/DownloadCv/DownloadCv.module';

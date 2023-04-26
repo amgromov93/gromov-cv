@@ -1,0 +1,20 @@
+.about {
+  &__title {
+    font-weight: 600;
+    font-size: 45.8075px;
+    line-height: 69px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin: 0;
+  }
+  &__description {
+    font-weight: 400;
+    font-size: 8.60415px;
+    line-height: 13px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin: 0;
+  }
+}

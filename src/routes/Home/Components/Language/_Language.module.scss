@@ -1,0 +1,71 @@
+.language {
+  &__title {
+    font-weight: 600;
+    font-size: 41.9149px;
+    line-height: 63px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin: 0;
+  }
+  &__text {
+    font-weight: 600;
+    font-size: 18.1484px;
+    line-height: 27px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin: 30px 0 0;
+  }
+  &__level {
+    position: relative;
+    height: 15px;
+    background: linear-gradient(90deg, #3C1DFF 18.63%, #14C9C9 78.88%);
+    border-radius: 30.7105px;
+    &_ukrainian {
+      width: 100%;
+      &::after {
+        content: 'Native';
+        position: absolute;
+        top: -14px;
+        right: 0;
+        font-weight: 600;
+        font-size: 8.91037px;
+        line-height: 13px;
+        letter-spacing: 0.05em;
+        text-transform: capitalize;
+        color: #FFFFFF;
+      }
+    }
+    &_english {
+      width: 70%;
+      &::after {
+        content: 'Intermediate';
+        position: absolute;
+        top: -14px;
+        right: 0;
+        font-weight: 600;
+        font-size: 8.91037px;
+        line-height: 13px;
+        letter-spacing: 0.05em;
+        text-transform: capitalize;
+        color: #FFFFFF;
+      }
+    }
+    &_deutsch {
+      width: 30%;
+      &::after {
+        content: 'Elementary';
+        position: absolute;
+        top: -14px;
+        right: 0;
+        font-weight: 600;
+        font-size: 8.91037px;
+        line-height: 13px;
+        letter-spacing: 0.05em;
+        text-transform: capitalize;
+        color: #FFFFFF;
+      }
+    }
+  }
+}

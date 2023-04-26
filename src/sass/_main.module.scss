@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+button {
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-style: normal;
+}
+ 
+body {
+  margin: 0;
+  height: 100%;
+  background: #1F1F1F;
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  min-width: 375px;
+  margin: 0 auto;
+  padding: 30px 30px;
+}

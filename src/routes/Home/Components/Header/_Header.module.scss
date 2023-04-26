@@ -1,0 +1,70 @@
+.header {
+  padding-bottom: 60px;
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__navBox {
+      &__menu {
+        display: none;
+      }
+    }
+  }
+  &__photo {
+    background-image: url(../../../../img/photo.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid #FFFFFF;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 50px auto;
+
+  }
+  &__textBlock {
+    margin-top: 50px;
+    text-align: center;
+    &__greetings {
+      margin-bottom: 10px;
+      font-weight: 300;
+      font-size: 17.4609px;
+      line-height: 26px;
+      letter-spacing: 0.36em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+    }
+    &__name {
+      margin: 0;
+      font-weight: 600;
+      font-size: 33.4016px;
+      line-height: 50px;
+      color: #FFFFFF;
+    }
+    &__jobTitle {
+      margin-top: 0;
+      margin-bottom: 40px;
+      font-weight: 300;
+      font-size: 13.6701px;
+      line-height: 21px;
+      letter-spacing: 0.015em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+    }
+    &__cvBtn {
+      padding: 12px 30px;
+      border: 0;
+      background: linear-gradient(180deg, #15B9B9 0%, #3C1DFF 100%);
+      border-radius: 7px;
+      font-weight: 400;
+      font-size: 17.4609px;
+      line-height: 26px;
+      letter-spacing: 0.05em;
+      text-transform: capitalize;
+      color: #FFFFFF;
+    }
+  }
+}

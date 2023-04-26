@@ -1,0 +1,37 @@
+.downloadCv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+  &__title {
+    font-weight: 600;
+    font-size: 41.9149px;
+    line-height: 63px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin: 0;
+    text-align: center;
+  }
+  &__description {
+    font-weight: 400;
+    font-size: 10.2849px;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: #9E9E9E;
+  }
+  &__btn {
+    margin-top: 30px;
+    padding: 12px 30px;
+    border: 0;
+    background: linear-gradient(180deg, #15B9B9 0%, #3C1DFF 100%);
+    border-radius: 7px;
+    font-weight: 400;
+    font-size: 17.4609px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+  }
+}

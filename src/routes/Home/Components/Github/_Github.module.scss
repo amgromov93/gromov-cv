@@ -1,0 +1,28 @@
+.github {
+  &__title {
+    font-weight: 600;
+    font-size: 41.9149px;
+    line-height: 63px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin: 0 0 20px;
+  }
+  &__linkBox {
+    display: flex;
+    justify-content: center;
+  }
+  &__link {
+    margin-top: 10px;
+    padding: 12px 30px;
+    border: 0;
+    background: linear-gradient(180deg, #15B9B9 0%, #3C1DFF 100%);
+    border-radius: 7px;
+    font-weight: 400;
+    font-size: 17.4609px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+  }
+}
