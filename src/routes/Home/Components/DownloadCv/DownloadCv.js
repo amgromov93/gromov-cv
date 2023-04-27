@@ -1,6 +1,6 @@
 import styles from "../../../../sass/style.module.scss";
 
-import file from "../../../../files/текст.txt"
+import file from "../../../../files/OLEKSII_GROMOV.pdf"
 
 export default function DownloadCv() {
   const downloadCvClasses = styles.container + ' ' + styles.downloadCv;

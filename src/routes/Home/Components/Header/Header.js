@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import styles from '../../../../sass/style.module.scss';
 import logo from '../../../../img/logo.png';
-import file from '../../../../files/текст.txt';
+import file from '../../../../files/OLEKSII_GROMOV.pdf';
 
 export default function Header() {
   const [menu, setMenu] = useState(false);
