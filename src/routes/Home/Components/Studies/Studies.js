@@ -18,7 +18,7 @@ export default function Studies() {
     {
       id: 2,
       title: 'HILLEL IT School (JS, React)',
-      description: 'Mar - Jun 2022',
+      description: 'Sep - Jan 2022',
       link: 'https://certificate.ithillel.ua/view/79018382',
       style: modClasses,
     },

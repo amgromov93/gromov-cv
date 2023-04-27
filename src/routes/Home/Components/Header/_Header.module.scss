@@ -5,8 +5,69 @@
     justify-content: space-between;
     align-items: center;
     &__navBox {
+      position: relative;
+      &__burger {
+        width: 20px;
+        height: 20px;
+        background-image: url(../../../../img/burger.svg);
+        background-repeat: no-repeat;
+        background-color: transparent;
+        background-size: contain;
+        background-position: center;
+        border: 0;
+        position: relative;
+        z-index: 3;
+        transition: 1s;
+        &_fixed {
+          width: 20px;
+          height: 20px;
+          background-image: url(../../../../img/close.png);
+          background-repeat: no-repeat;
+          background-color: transparent;
+          background-size: contain;
+          background-position: center;
+          border: 0;
+          z-index: 3;
+          position: fixed;
+          right: 30px;
+          top: 30px;
+          transition: 1s;
+        }
+      }
       &__menu {
-        display: none;
+        padding: 100px;
+        width: 30vh;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        position: fixed;
+        z-index: 2;
+        right: 0px;
+        top: 0px;
+        background-color: #ECE6CD;
+        transition: 1.5s;
+        &_close {
+          padding: 100px;
+          width: 30vh;
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 20px;
+          position: fixed;
+          z-index: 2;
+          right: -40vh;
+          top: 0px;
+          background-color: grey;
+          transition: 1.5s;
+        }
+      }
+      &__link {
+        color: #1F1F1F;
+        width: 30vh;
+        text-align: center;
       }
     }
   }
