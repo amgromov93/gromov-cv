@@ -1,6 +1,7 @@
 .header {
   padding-bottom: 60px;
   &__box {
+    // padding: 0 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,34 +10,56 @@
       &__burger {
         width: 20px;
         height: 20px;
-        background-image: url(../../../../img/burger.svg);
-        background-repeat: no-repeat;
         background-color: transparent;
-        background-size: contain;
-        background-position: center;
         border: 0;
-        position: relative;
+        position: absolute;
+        right: 0;
+        top: -10px;
         z-index: 3;
-        transition: 1s;
-        &_fixed {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        & span {
+          background: #fff;
+          transition: all 1.5s;
+          height: 2px;
           width: 20px;
-          height: 20px;
-          background-image: url(../../../../img/close.png);
-          background-repeat: no-repeat;
-          background-color: transparent;
-          background-size: contain;
-          background-position: center;
-          border: 0;
-          z-index: 3;
-          position: fixed;
-          right: 30px;
-          top: 30px;
-          transition: 1s;
+        }
+      }
+      &__burgerActive {
+        width: 20px;
+        height: 20px;
+        background-color: transparent;
+        border: 0;
+        z-index: 3;
+        position: fixed;
+        right: 30px;
+        top: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        & span {
+          height: 2px;
+          width: 20px;
+          background: #1F1F1F;
+          transition: all 1.5s;
+          &:first-child {
+            transform: translateY(13px) rotate(45deg);
+          }
+          &:nth-child(2) {
+            transition: all 0s;
+            width: 0;
+          }
+          &:last-child {
+            transform: translateY(-5px) rotate(-45deg);
+          }
         }
       }
       &__menu {
-        padding: 100px;
-        width: 30vh;
+        padding: 100px 0;
+        width: 40vh;
         height: 100vh;
         display: flex;
         flex-direction: column;
@@ -49,7 +72,7 @@
         background-color: #ECE6CD;
         transition: 1.5s;
         &_close {
-          padding: 100px;
+          padding: 100px 0;
           width: 30vh;
           height: 100vh;
           display: flex;
@@ -58,7 +81,7 @@
           gap: 20px;
           position: fixed;
           z-index: 2;
-          right: -40vh;
+          right: -30vh;
           top: 0px;
           background-color: grey;
           transition: 1.5s;
