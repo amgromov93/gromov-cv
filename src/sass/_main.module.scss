@@ -22,6 +22,17 @@ a {
 
 .container {
   min-width: 375px;
-  margin: 0 auto;
   padding: 30px 30px;
+}
+
+@media screen and (min-width: 991px) {
+  .container__lt {
+    padding: 30px 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container__lg {
+    padding: 30px 100px;
+  }
 }

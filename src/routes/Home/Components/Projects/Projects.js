@@ -7,6 +7,8 @@ import hlegal from "../../../../img/hlegal.webp";
 import mntn from "../../../../img/mntn.webp";
 
 export default function Projects() {
+  const projectsClasses = styles.container + ' ' + styles.projects;
+
   const projects = [
     {
       id: 1,
@@ -26,13 +28,15 @@ export default function Projects() {
   ]
 
   return (
-    <div className={styles.container}>
-      <h3 className={styles.projects__title}>My projects</h3>
-      {projects.map(item => (
-        <Link to={item.link} key={item.id}>
-          {item.pic}
-        </Link>
-      ))}
+    <div className={projectsClasses}>
+      <h3 className={styles.projects__title}>My last projects</h3>
+      <div className={styles.projects__box}>
+        {projects.map(item => (
+          <Link to={item.link} key={item.id}>
+            {item.pic}
+          </Link>
+        ))}
+      </div>
     </div>
   )
 }

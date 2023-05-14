@@ -28,3 +28,17 @@
     }
   }
 }
+
+@media screen and (min-width: 991px) {
+  .skills {
+    &__box {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__item {
+      &__text {
+        font-size: 10px;
+      }
+    }
+  }
+}

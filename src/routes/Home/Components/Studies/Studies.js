@@ -5,6 +5,7 @@ import styles from "../../../../sass/style.module.scss";
 import icon from "../../../../img/studieIcon.svg";
 
 export default function Studies() {
+  const studiesClasses = styles.container + ' ' + styles.studies;
   const modClasses = styles.studies__item + ' ' + styles.studies__item_mb0;
 
   const studies = [
@@ -25,17 +26,19 @@ export default function Studies() {
   ]
 
   return (
-    <div className={styles.container}>
+    <div className={studiesClasses}>
       <h3 className={styles.studies__title}>Studies</h3>
-      {studies.map(item => (
-        <Link to={item.link} key={item.id}>
-          <div className={item.style}> 
-            <img className={styles.studies__item__icon} src={icon} alt="study"/>
-            <p className={styles.studies__item__title}>{item.title}</p>
-            <p className={styles.studies__item__description}>{item.description}</p>
-          </div>
-        </Link>
-      ))}
+      <div className={styles.studies__box}>
+        {studies.map(item => (
+          <Link to={item.link} key={item.id}>
+            <div className={item.style}> 
+              <img className={styles.studies__item__icon} src={icon} alt="study"/>
+              <p className={styles.studies__item__title}>{item.title}</p>
+              <p className={styles.studies__item__description}>{item.description}</p>
+            </div>
+          </Link>
+        ))}
+      </div>
     </div>
   )
 }

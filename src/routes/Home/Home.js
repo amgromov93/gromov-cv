@@ -1,3 +1,6 @@
+import styles from "../../sass/style.module.scss";
+
+import ContactsInfo from "../Contacts/ContactsInfo/ContactsInfo";
 import About from "./Components/About/About";
 import DownloadCv from "./Components/DownloadCv/DownloadCv";
 import Github from "./Components/Github/Github";
@@ -9,17 +12,24 @@ import SliderContainer from "./Components/Slider/SliderContainer";
 import Studies from "./Components/Studies/Studies";
 
 export default function Home() {
+  const homePageClasses = styles.homePage + ' ' + styles.container__lt + ' ' + styles.container__lg;
+
   return (
-    <>
+    <div className={homePageClasses}>
       <Header />
       <SliderContainer />
-      <About />
-      <Skills />
-      <Language />
-      <Studies />
-      <Github />
-      <Projects />
-      <DownloadCv />
-    </>
+      <div className={styles.contactsInfoBlock}>
+        <ContactsInfo />
+      </div>
+      <div className={styles.homePage__secondColumn}>
+        <About />
+        <Skills />
+        <Language />
+        <Studies />
+        <Github />
+        <Projects />
+      </div>
+        <DownloadCv />
+    </div>
   )
 }

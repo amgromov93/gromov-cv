@@ -44,6 +44,10 @@
       line-height: 44px;
       letter-spacing: 0.05em;
       color: #FFFFFF;
+      transition: 0.4s;
+      &:hover {
+        color: rgb(172, 155, 219);
+      }
     }
   }
 }

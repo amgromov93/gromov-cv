@@ -26,3 +26,15 @@
     color: #FFFFFF;
   }
 }
+
+@media screen and (min-width: 991px) {
+  .github {
+    &__link {
+      transition: 0.4s;
+      &:hover {
+        font-weight: 600;
+        background: linear-gradient(180deg, #15a9a9 0%, #2d17bd 100%);
+      }
+    }
+  }
+}

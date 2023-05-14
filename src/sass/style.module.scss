@@ -1,6 +1,8 @@
 @import './main.module';
 @import './fonts_module';
 
+@import '../routes/Home/Home.module';
+
 @import '../routes/Home/Components/Header/Header.module';
 @import '../routes/Home/Components/Slider/Slider.module';
 @import '../routes/Home/Components/About/About.module';

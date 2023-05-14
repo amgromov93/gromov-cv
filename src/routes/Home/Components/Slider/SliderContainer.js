@@ -4,6 +4,8 @@ import Slider from "react-slick";
 import styles from "../../../../sass/style.module.scss";
 
 export default function SliderContainer() {
+  const sliderClasses = styles.container + ' ' + styles.slider;
+
   const htmlClasses = styles.slider__img + ' ' + styles.slider__img_html;
   const cssClasses = styles.slider__img + ' ' + styles.slider__img_css;
   const jsClasses = styles.slider__img + ' ' + styles.slider__img_js;
@@ -25,7 +27,7 @@ export default function SliderContainer() {
   };
   
   return (
-    <div className={styles.container}>
+    <div className={sliderClasses}>
       <Slider {...settings}>
         <div className={htmlClasses}></div>
         <div className={cssClasses}></div>

@@ -18,3 +18,12 @@
     margin: 0;
   }
 }
+
+@media screen and (min-width: 991px) {
+ .about {
+  &__description {
+    font-size: 12px;
+    line-height: 20px;
+  } 
+ }
+}

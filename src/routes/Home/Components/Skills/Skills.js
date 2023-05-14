@@ -5,6 +5,8 @@ import levelFive from "../../../../img/level4i5.svg";
 import levelThree from "../../../../img/level4i3.svg";
 
 export default function Skills() {
+  const skillsClasses = styles.container + ' ' + styles.skills;
+
   const skills = [
     {
       id: 1,
@@ -30,7 +32,7 @@ export default function Skills() {
   
   
   return (
-    <div className={styles.container}>
+    <div className={skillsClasses}>
       <h3 className={styles.skills__title}>My Skills</h3>
       <div className={styles.skills__box}>
         {skills.map(item => (
