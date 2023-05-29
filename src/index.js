@@ -4,6 +4,8 @@ import {
   RouterProvider, 
   createBrowserRouter 
 } from "react-router-dom";
+import { Provider } from "react-redux";
+import store from "./store"
 
 import "./sass/style.module.scss"
 
@@ -29,6 +31,8 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router}/>
+    <Provider store={store}>
+      <RouterProvider router={router}/>
+    </Provider>
   </React.StrictMode>
 );

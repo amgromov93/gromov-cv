@@ -1,0 +1,50 @@
+.rewiews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+  &__title {
+    font-weight: 600;
+    font-size: 41.9149px;
+    line-height: 63px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin: 0;
+    text-align: center;
+  }
+  &__text {
+    color: #FFFFFF;
+    margin-bottom: 15px;
+  }
+  &__box {
+    padding: 0;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    &__el {
+      padding: 10px 0;
+      color: #FFFFFF;
+      list-style: none;
+    }
+    &__buttons {
+      margin: 5px 0;
+      display: flex;
+      gap: 10px;
+    }
+  }
+  &__form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .rewiews {
+    margin-top: 60px;
+    grid-column: 1 / -1;
+  }
+}

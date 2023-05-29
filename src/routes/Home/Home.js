@@ -7,6 +7,7 @@ import Github from "./Components/Github/Github";
 import Header from "./Components/Header/Header";
 import Language from "./Components/Language/Language";
 import Projects from "./Components/Projects/Projects";
+import Rewiews from "./Components/Rewiews/Rewiews";
 import Skills from "./Components/Skills/Skills";
 import SliderContainer from "./Components/Slider/SliderContainer";
 import Studies from "./Components/Studies/Studies";
@@ -30,6 +31,7 @@ export default function Home() {
         <Projects />
       </div>
         <DownloadCv />
+        <Rewiews />
     </div>
   )
 }
